@@ -1,18 +1,10 @@
 # 主题
 
-例如：
-
-Day1 Linux基础命令  
-Python 文件读取  
-R ggplot绘图  
-
+	1.终端提示符
+	2.基础命令
 ---
 
 # 一、学习目标
-
-这一节要学什么？
-
-例如：
 
 - 学会使用 Linux 基础命令
 - 理解 pwd、ls、cd、mkdir 的作用
@@ -22,11 +14,19 @@ R ggplot绘图
 
 # 二、知识点总结
 
+## 终端提示符
+
+```
+PC            → 用户名
+@xxxx         → 电脑名
+MINGW64       → Git Bash 环境
+/g/bioinfo_notes → 当前目录
+$             → 等待输入命令
+```
+
 ## 1. 命令 / 函数
 
-### pwd
-
-作用：查看当前目录
+### pwd  查看当前目录
 
 ```bash
 pwd
@@ -35,14 +35,13 @@ pwd
 示例输出：
 
 ```bash
-/c/Users/PC
+/data/gaodd
 ```
 
 ---
 
-### ls
+### ls 查看当前目录文件
 
-作用：查看当前目录文件
 
 ```bash
 ls
@@ -56,9 +55,8 @@ ls -l
 
 ---
 
-### cd
+### cd 进入某个目录
 
-进入目录：
 
 ```bash
 cd bioinfo_learning
@@ -68,6 +66,62 @@ cd bioinfo_learning
 
 ```bash
 cd ..
+```
+
+返回home:
+```bash
+cd ~
+```
+
+### mkdir  创建文件夹
+
+创建文件夹
+```bash
+mkdir filename
+```
+
+### rm  删除
+
+删除文件
+```bash
+rm filename.txt
+```
+
+删除文件夹
+```bash
+rm -r foldername
+```
+
+### cp 复制
+
+```
+cp file.txt
+```
+
+复制到文件夹
+
+```
+cp file.txt /Data
+```
+
+### mv 移动或者重命名
+
+移动文件
+```
+rm file.txt /Data
+```
+
+重命名
+```
+rm oldname.txt newname.txt
+```
+
+### clear  清屏
+
+清空终端
+
+```
+clear
 ```
 
 ---
